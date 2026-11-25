@@ -4,7 +4,10 @@ Power BI · Python · DAX
 
 Dashboard overview
 
-⚠️ Data disclaimer / Aviso sobre los datos: the dataset is synthetic (generated with Python, seed 42) and mimics the structure of marketing reporting platforms. Findings describe the simulated scenario, not real market behavior. / El dataset es sintético (generado con Python, seed 42) e imita la estructura de plataformas de reporting de marketing. Los hallazgos describen el escenario simulado, no el comportamiento real del mercado.
+⚠️ Data disclaimer / Aviso sobre los datos: 
+
+The dataset is synthetic (generated with Python, seed 42) and mimics the structure of marketing reporting platforms. Findings describe the simulated scenario, not real market behavior.
+El dataset es sintético (generado con Python, seed 42) e imita la estructura de plataformas de reporting de marketing. Los hallazgos describen el escenario simulado, no el comportamiento real del mercado.
 
 1. Context
 
@@ -20,6 +23,7 @@ How much are we spending, and what do we get back (ROAS, CPA)?
 Which channels and sources are efficient, and which are not?
 How do impressions, CTR and spend evolve month over month?
 Where could budget be reallocated?
+
 3. Analysis
 
 Data generation (Python)
@@ -104,6 +108,7 @@ Construir un dashboard interactivo que ofrezca una vista única del desempeño e
 ¿Qué canales y fuentes son eficientes y cuáles no?
 ¿Cómo evolucionan las impresiones, el CTR y el gasto mes a mes?
 ¿Dónde se podría reasignar presupuesto?
+
 3. Análisis
 
 Generación de datos (Python)
@@ -172,6 +177,7 @@ Las diferencias por campaña o por mes son ruido aleatorio y no se tratan como i
 El escenario de reasignación supone un ROAS constante. En la realidad el retorno disminuye al escalar el gasto, por lo que debe validarse con una prueba controlada.
 Próximos pasos: repetir el análisis con datos reales de campañas, integrar analítica web para medir Organic y agregar vistas de atribución y de ritmo de gasto.
 
+```
 📁 Repository structure | Estructura del repositorio
 ├── README.md
 ├── improvado_data.ipynb        # Data generation / Generación de datos
@@ -182,6 +188,8 @@ Próximos pasos: repetir el análisis con datos reales de campañas, integrar an
     ├── 02_channel_performance.png
     ├── 03_spend_vs_revenue_share.png
     └── 04_source_breakdown.png
+```
+
 🛠️ Tools | Herramientas
 
 Python (pandas, numpy) · Jupyter Notebook · Power BI · DAX · Data modeling / Modelado de datos
