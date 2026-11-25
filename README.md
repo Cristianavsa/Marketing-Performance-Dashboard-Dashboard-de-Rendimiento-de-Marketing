@@ -95,7 +95,7 @@ Next steps: repeat the analysis with real campaign data, integrate web analytics
 
 ## Dashboard Overview
 
-![Dashboard Overview](img/01_dashboard_overview.png)
+![Dashboard Overview](01_dashboard_overview.png)
 
 1. Contexto
 
@@ -182,7 +182,7 @@ Próximos pasos: repetir el análisis con datos reales de campañas, integrar an
 
 ## Dashboard Overview
 
-![Dashboard Overview](img/01_dashboard_overview.png)
+![Dashboard Overview](01_dashboard_overview.png)
 
 ```
 📁 Repository structure | Estructura del repositorio
