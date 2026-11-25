@@ -97,7 +97,6 @@ Next steps: repeat the analysis with real campaign data, integrate web analytics
 
 ![Dashboard Overview](img/01_dashboard_overview.png)
 
-
 1. Contexto
 
 Los equipos de marketing que operan varios canales pagados y orgánicos a la vez suelen trabajar con reportes dispersos, lo que dificulta ver dónde el presupuesto genera retorno y dónde se está desperdiciando.
@@ -191,9 +190,7 @@ Próximos pasos: repetir el análisis con datos reales de campañas, integrar an
 ├── Marketing_data.ipynb        # Data generation / Generación de datos
 ├── marketing_data.csv          # Synthetic dataset / Dataset sintético
 ├── dashboard.pbix              # Power BI file / Archivo de Power BI
-└── img/
-    ├── 01_dashboard_overview.png
-    └── 02_channel_performance.png
+├── 01_dashboard_overview.png
 ```
 
 🛠️ Tools | Herramientas
