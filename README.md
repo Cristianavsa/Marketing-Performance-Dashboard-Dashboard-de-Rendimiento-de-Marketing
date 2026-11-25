@@ -180,14 +180,12 @@ Próximos pasos: repetir el análisis con datos reales de campañas, integrar an
 ```
 📁 Repository structure | Estructura del repositorio
 ├── README.md
-├── improvado_data.ipynb        # Data generation / Generación de datos
+├── Marketing_data.ipynb        # Data generation / Generación de datos
 ├── marketing_data.csv          # Synthetic dataset / Dataset sintético
 ├── dashboard.pbix              # Power BI file / Archivo de Power BI
 └── img/
     ├── 01_dashboard_overview.png
-    ├── 02_channel_performance.png
-    ├── 03_spend_vs_revenue_share.png
-    └── 04_source_breakdown.png
+    └── 02_channel_performance.png
 ```
 
 🛠️ Tools | Herramientas
@@ -196,4 +194,8 @@ Python (pandas, numpy) · Jupyter Notebook · Power BI · DAX · Data modeling /
 
 👤 Author | Autor
 
-Cristian Avila · [LinkedIn](https://www.linkedin.com/in/cristian-av-sa-data-analyst2023/)
+**Cristian Avila**
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/cristian-av-sa-data-analyst2023/)
+- 🐙 [GitHub]([https://github.com/](https://github.com/Cristianavsa)
+- 📧 [Hotmail](mailto: cristianavsa@hotmail.com)
