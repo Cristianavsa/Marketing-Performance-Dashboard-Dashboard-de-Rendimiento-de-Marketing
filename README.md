@@ -93,6 +93,10 @@ Differences by campaign or by month are random noise and are not treated as insi
 The reallocation scenario assumes constant ROAS. In reality, returns diminish as spend scales, so it should be validated with a controlled test.
 Next steps: repeat the analysis with real campaign data, integrate web analytics to measure Organic, and add attribution and budget-pacing views.
 
+## Dashboard Overview
+
+![Dashboard Overview](img/01_dashboard_overview.png)
+
 
 1. Contexto
 
@@ -176,6 +180,10 @@ Los datos son sintéticos y las diferencias entre canales provienen de parámetr
 Las diferencias por campaña o por mes son ruido aleatorio y no se tratan como insights.
 El escenario de reasignación supone un ROAS constante. En la realidad el retorno disminuye al escalar el gasto, por lo que debe validarse con una prueba controlada.
 Próximos pasos: repetir el análisis con datos reales de campañas, integrar analítica web para medir Organic y agregar vistas de atribución y de ritmo de gasto.
+
+## Dashboard Overview
+
+![Dashboard Overview](img/01_dashboard_overview.png)
 
 ```
 📁 Repository structure | Estructura del repositorio
