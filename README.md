@@ -2,13 +2,10 @@
 
 Power BI · Python · DAX
 
-🌐 English · Español
-
 Dashboard overview
 
 ⚠️ Data disclaimer / Aviso sobre los datos: the dataset is synthetic (generated with Python, seed 42) and mimics the structure of marketing reporting platforms. Findings describe the simulated scenario, not real market behavior. / El dataset es sintético (generado con Python, seed 42) e imita la estructura de plataformas de reporting de marketing. Los hallazgos describen el escenario simulado, no el comportamiento real del mercado.
 
-English
 1. Context
 
 Marketing teams that run several paid and organic channels at once often work with scattered reports, which makes it hard to see where the budget is generating returns and where it is being wasted.
@@ -36,7 +33,8 @@ Loaded marketing_data.csv and built a Calendar dimension table related to the da
 Created calculated columns for period grouping (Año_Mes, Month-Year, Trimestre).
 Built DAX measures for the main KPIs: CTR, CPM, Cost per Click, Conversion Rate, Total Spend, Total Revenue, ROAS, CPA, Spend/Revenue Share and month-over-month variations (impressions, CTR, spend).
 Ratios are calculated with DIVIDE(SUM(...), SUM(...)) instead of averaging row-level ratios, which would give incorrect results.
-DAX
+
+```DAX
 Total Revenue = SUM(marketing_data[revenue])
 
 ROAS = DIVIDE([Total Revenue], [Total_Spend])
@@ -50,6 +48,7 @@ DIVIDE(
 )
 
 Net Result = [Total Revenue] - [Total_Spend]
+```
 
 Dashboard design
 
@@ -61,13 +60,12 @@ Channel performance
 
 4. Findings
 
-(Simulated scenario)
-
-Channel	Share of spend	Share of revenue	ROAS	CPA
-Paid Search	32.5%	65.5%	2.92	$30.87
-Programmatic	10.4%	7.4%	1.03	$87.14
-Paid Social	57.1%	27.1%	0.69	$130.94
-Organic	0%	0%	n/a	n/a
+| Channel | Share of Spend | Share of Revenue | ROAS | CPA |
+|----------|----------:|----------:|----------:|----------:|
+| Paid Search | 32.5% | 65.5% | 2.92 | $30.87 |
+| Programmatic | 10.4% | 7.4% | 1.03 | $87.14 |
+| Paid Social | 57.1% | 27.1% | 0.69 | $130.94 |
+| Organic | 0.0% | 0.0% | N/A | N/A |
 
 Spend share vs revenue share
 
@@ -82,6 +80,7 @@ Reallocation scenario (hypothesis): moving 25% of Paid Social spend (~$5.8M) to 
 Source breakdown
 
 5. Conclusions
+   
 The dashboard makes the budget imbalance visible in seconds and ties spend to return by channel, replacing manual cross-channel reports.
 Recommendation for this scenario: review the Paid Social allocation and test shifting part of it to Paid Search.
 Limitations:
@@ -89,7 +88,8 @@ The data is synthetic, and channel differences come from parameters I defined. T
 Differences by campaign or by month are random noise and are not treated as insights.
 The reallocation scenario assumes constant ROAS. In reality, returns diminish as spend scales, so it should be validated with a controlled test.
 Next steps: repeat the analysis with real campaign data, integrate web analytics to measure Organic, and add attribution and budget-pacing views.
-Español
+
+
 1. Contexto
 
 Los equipos de marketing que operan varios canales pagados y orgánicos a la vez suelen trabajar con reportes dispersos, lo que dificulta ver dónde el presupuesto genera retorno y dónde se está desperdiciando.
@@ -117,7 +117,8 @@ Cargué marketing_data.csv y construí una tabla de dimensión Calendar relacion
 Creé columnas calculadas para agrupar por periodo (Año_Mes, Month-Year, Trimestre).
 Desarrollé medidas DAX para los KPIs principales: CTR, CPM, Costo por Clic, Tasa de Conversión, Gasto Total, Ingresos Totales, ROAS, CPA, participación del gasto/ingresos y variaciones mes contra mes (impresiones, CTR, gasto).
 Las razones se calculan con DIVIDE(SUM(...), SUM(...)) y no promediando razones por fila, lo cual daría resultados incorrectos.
-DAX
+
+``` DAX
 Total Revenue = SUM(marketing_data[revenue])
 
 ROAS = DIVIDE([Total Revenue], [Total_Spend])
@@ -131,7 +132,7 @@ DIVIDE(
 )
 
 Net Result = [Total Revenue] - [Total_Spend]
-
+```
 Diseño del dashboard
 
 Tarjetas de KPI: Gasto, Ingresos, ROAS, CPA, Impresiones, CTR, CPM, CPC, Conversiones y Tasa de Conversión.
@@ -142,13 +143,12 @@ Desempeño por canal
 
 4. Hallazgos
 
-(Escenario simulado)
-
-Canal	% del gasto	% de los ingresos	ROAS	CPA
-Paid Search	32.5%	65.5%	2.92	$30.87
-Programmatic	10.4%	7.4%	1.03	$87.14
-Paid Social	57.1%	27.1%	0.69	$130.94
-Organic	0%	0%	n/a	n/a
+| Canal        | % del gasto | % de los ingresos | ROAS | CPA     |
+|-------------|------------|-------------------|------|---------|
+| Paid Search | 32.5%      | 65.5%             | 2.92 | $30.87  |
+| Programmatic| 10.4%      | 7.4%              | 1.03 | $87.14  |
+| Paid Social | 57.1%      | 27.1%             | 0.69 | $130.94 |
+| Organic     | 0%         | 0%                | N/A  | N/A     |
 
 Participación del gasto vs ingresos
 
@@ -163,6 +163,7 @@ Escenario de reasignación (hipótesis): mover el 25% del gasto de Paid Social (
 Desglose por fuente
 
 5. Conclusiones
+   
 El dashboard hace visible el desbalance de presupuesto en segundos y conecta gasto con retorno por canal, reemplazando reportes manuales entre canales.
 Recomendación para este escenario: revisar la asignación de Paid Social y probar mover parte de ella a Paid Search.
 Limitaciones:
@@ -170,6 +171,7 @@ Los datos son sintéticos y las diferencias entre canales provienen de parámetr
 Las diferencias por campaña o por mes son ruido aleatorio y no se tratan como insights.
 El escenario de reasignación supone un ROAS constante. En la realidad el retorno disminuye al escalar el gasto, por lo que debe validarse con una prueba controlada.
 Próximos pasos: repetir el análisis con datos reales de campañas, integrar analítica web para medir Organic y agregar vistas de atribución y de ritmo de gasto.
+
 📁 Repository structure | Estructura del repositorio
 ├── README.md
 ├── improvado_data.ipynb        # Data generation / Generación de datos
@@ -186,4 +188,4 @@ Python (pandas, numpy) · Jupyter Notebook · Power BI · DAX · Data modeling /
 
 👤 Author | Autor
 
-Cristian Avila · LinkedIn · GitHub
+Cristian Avila · [LinkedIn](https://www.linkedin.com/in/cristian-av-sa-data-analyst2023/)
